@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sanxiang.school.show.MainActivity"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/tab_live"
+            style="@style/main_rb"
+            android:text="直播"
+            />
+        <RadioButton
+            android:id="@+id/tab_mind"
+            style="@style/main_rb"
+            android:text="关注"/>
+        <RadioButton
+            android:id="@+id/tab_find"
+            style="@style/main_rb"
+            android:text="发现"/>
+        <RadioButton
+            android:id="@+id/tab_my"
+            style="@style/main_rb"
+            android:text="我的"/>
+    </RadioGroup>
+    <View
+        android:id="@+id/main_rg_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"
+        android:layout_above="@id/main_rg"/>
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_rg_divider">
+
+    </FrameLayout>
+</RelativeLayout>
